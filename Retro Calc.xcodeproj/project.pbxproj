@@ -14,6 +14,12 @@
 		DEEEA8FF1C6082FC003F03CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEEA8FD1C6082FC003F03CF /* LaunchScreen.storyboard */; };
 		DEEEA90A1C6082FC003F03CF /* Retro_CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEEA9091C6082FC003F03CF /* Retro_CalcTests.swift */; };
 		DEEEA9151C6082FC003F03CF /* Retro_CalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEEA9141C6082FC003F03CF /* Retro_CalcUITests.swift */; };
+		DEEEA9231C60A2E5003F03CF /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEEEA9221C60A2E5003F03CF /* Minecraft.ttf */; };
+		DEEEA9241C60A2E5003F03CF /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEEEA9221C60A2E5003F03CF /* Minecraft.ttf */; };
+		DEEEA9251C60A2E5003F03CF /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEEEA9221C60A2E5003F03CF /* Minecraft.ttf */; };
+		DEEEA9271C60ABD0003F03CF /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEEEA9261C60ABD0003F03CF /* btn.wav */; };
+		DEEEA9281C60ABD0003F03CF /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEEEA9261C60ABD0003F03CF /* btn.wav */; };
+		DEEEA9291C60ABD0003F03CF /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEEEA9261C60ABD0003F03CF /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,8 @@
 		DEEEA9101C6082FC003F03CF /* Retro CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Retro CalcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEEA9141C6082FC003F03CF /* Retro_CalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retro_CalcUITests.swift; sourceTree = "<group>"; };
 		DEEEA9161C6082FC003F03CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEEEA9221C60A2E5003F03CF /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		DEEEA9261C60ABD0003F03CF /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,8 @@
 		DEEEA8F31C6082FC003F03CF /* Retro Calc */ = {
 			isa = PBXGroup;
 			children = (
+				DEEEA9221C60A2E5003F03CF /* Minecraft.ttf */,
+				DEEEA9261C60ABD0003F03CF /* btn.wav */,
 				DEEEA8F41C6082FC003F03CF /* AppDelegate.swift */,
 				DEEEA8F61C6082FC003F03CF /* ViewController.swift */,
 				DEEEA8F81C6082FC003F03CF /* Main.storyboard */,
@@ -193,6 +203,7 @@
 				TargetAttributes = {
 					DEEEA8F01C6082FC003F03CF = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = H27XDZ2QBG;
 					};
 					DEEEA9041C6082FC003F03CF = {
 						CreatedOnToolsVersion = 7.2;
@@ -229,8 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEEA9271C60ABD0003F03CF /* btn.wav in Resources */,
 				DEEEA8FF1C6082FC003F03CF /* LaunchScreen.storyboard in Resources */,
 				DEEEA8FC1C6082FC003F03CF /* Assets.xcassets in Resources */,
+				DEEEA9231C60A2E5003F03CF /* Minecraft.ttf in Resources */,
 				DEEEA8FA1C6082FC003F03CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEEA9241C60A2E5003F03CF /* Minecraft.ttf in Resources */,
+				DEEEA9281C60ABD0003F03CF /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +261,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEEA9251C60A2E5003F03CF /* Minecraft.ttf in Resources */,
+				DEEEA9291C60ABD0003F03CF /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +414,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Retro Calc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JoverIndustries.Retro-Calc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Retro Calc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JoverIndustries.Retro-Calc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
