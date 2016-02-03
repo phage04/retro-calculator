@@ -32,6 +32,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        NSThread.sleepForTimeInterval(1)
 
         let path = NSBundle.mainBundle().pathForResource("btn", ofType: "wav")
         
