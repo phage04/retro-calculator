@@ -56,7 +56,11 @@ class ViewController: UIViewController {
         playSound()
         
         runningNumber += "\(btn.tag)"
+        if (runningNumber.characters.count < 13){
+            
         outputLbl.text = runningNumber
+            
+        } 
         
     }
 
@@ -76,6 +80,14 @@ class ViewController: UIViewController {
     }
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(currentOperation)
+    }
+    
+    @IBAction func onClearPreassed(sender: AnyObject) {
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        currentOperation = Operation.Empty
+        outputLbl.text = runningNumber
     }
     
     func processOperation(op: Operation){

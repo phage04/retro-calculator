@@ -150,7 +150,7 @@
                                                 </constraints>
                                                 <state key="normal" image="2"/>
                                                 <connections>
-                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchDragInside" id="hU2-ih-QjH"/>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xlq-Yn-Dsi"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOE-Bu-g7h">
@@ -246,17 +246,37 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh1-zb-03I">
+                                <rect key="frame" x="266" y="557" width="69" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="19" id="3wz-Rj-cze"/>
+                                    <constraint firstAttribute="width" constant="69" id="Wdd-VO-B2T"/>
+                                    <constraint firstAttribute="height" constant="23" id="fZT-hG-AR7"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3wz-Rj-cze"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onClearPreassed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNR-SL-4NV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WFS-eY-qyb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3RT-OX-0ll"/>
                             <constraint firstItem="WFS-eY-qyb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5Yz-jv-QeU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WFS-eY-qyb" secondAttribute="bottom" id="Dd6-cu-5t1"/>
+                            <constraint firstAttribute="bottom" secondItem="xh1-zb-03I" secondAttribute="bottom" constant="10" id="Gif-pA-t3w"/>
                             <constraint firstItem="KzM-2O-VjZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Igi-DW-SCP"/>
                             <constraint firstAttribute="trailing" secondItem="WFS-eY-qyb" secondAttribute="trailing" id="Iko-rG-2MW"/>
                             <constraint firstItem="KzM-2O-VjZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KEB-3E-WHz"/>
                             <constraint firstItem="G20-Nl-sEM" firstAttribute="centerY" secondItem="KzM-2O-VjZ" secondAttribute="centerY" constant="47" id="OoL-XD-a1r"/>
+                            <constraint firstItem="xh1-zb-03I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PvT-AE-MPX"/>
                             <constraint firstItem="K4h-LE-cjs" firstAttribute="trailing" secondItem="f1g-7E-Gfd" secondAttribute="trailing" constant="-10" id="XgT-lo-ve7"/>
+                            <constraint firstItem="xh1-zb-03I" firstAttribute="centerX" secondItem="G20-Nl-sEM" secondAttribute="centerX" id="aj1-J9-Ndf"/>
                             <constraint firstItem="K4h-LE-cjs" firstAttribute="bottom" secondItem="f1g-7E-Gfd" secondAttribute="bottom" constant="-10" id="dMZ-mW-PcH"/>
                             <constraint firstAttribute="bottom" secondItem="Huc-0b-4sn" secondAttribute="bottom" constant="2" id="qWV-ij-lN7"/>
                             <constraint firstItem="G20-Nl-sEM" firstAttribute="centerX" secondItem="KzM-2O-VjZ" secondAttribute="centerX" id="uPy-Dp-VQx"/>
@@ -284,6 +304,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
